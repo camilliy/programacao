@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#main-nav ul li {
+    margin: 0 15px;
+}
+
+#main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#main-nav a:hover {
+    color: #e0e0e0;
+}
+
+main {
+    padding: 80px 20px 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #007BFF;
+    font-size: 1.5em;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+#back-to-top:hover {
+    background-color: #0056b3;
+}
+
+#sobre {
+    padding: 20px;
+}
+
+#sobre h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.conteudo {
+    display: flex; 
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imagem-sobre {
+    max-width: 30%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.texto-sobre {
+    flex: 2;
+    max-width: 100%;
+}
+
+.texto-sobre p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-sobre {
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+#projetos {
+    padding: 20px;
+}
+
+#projetos h2 {
+    color: #007BFF;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.projeto {
+    margin-bottom: 30px;
+}
+
+.projeto h3 {
+    color: #007BFF;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.projeto-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagem-projeto {
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+#pesquisas {
+    text-align: center;
+}
+
+#pesquisas h2 {
+    margin-bottom: 20px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.small-image {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#futuro {
+    text-align: center;
+    padding: 20px;
+}
+
+#futuro h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+#futuro p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0 auto 20px auto;
+    max-width: 700px;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.future-image {
+    width: 120px;
+    height: auto;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#thank-you-message {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #28a745;
+}
+
+#contato {
+    text-align: center;
+}
+
+#contato h2 {
+    margin-bottom: 20px; 
+}
