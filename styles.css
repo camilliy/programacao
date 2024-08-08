@@ -145,7 +145,7 @@ footer {
 }
 
 .imagem-sobre {
-    max-width: 30%;
+    max-width: 20%;
     height: auto;
     border: 2px solid #ddd;
     border-radius: 8px;
@@ -168,7 +168,7 @@ footer {
     }
 
     .imagem-sobre {
-        max-width: 50%;
+        max-width: 60%; /* Ajustado para 60% em telas menores */
         margin-bottom: 20px;
     }
 }
